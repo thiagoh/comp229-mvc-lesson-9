@@ -16,14 +16,15 @@ namespace comp229_mvc_lesson_9.Controllers {
         public ActionResult Index() {
 
             var genres = new List<Genre>() {
-                new Genre("Classic"),
-                new Genre("Disco"),
-                new Genre("Eletronic"),
-                new Genre("Jazz"),
-                new Genre("Rock"),
+                //new Genre("Classic"),
+                //new Genre("Disco"),
+                //new Genre("Eletronic"),
+                //new Genre("Jazz"),
+                //new Genre("Rock"),
             };
 
-            return View(genres);
+            //return View(genres);
+            return View(db.Genres.ToList());
         }
 
         //// GET: Store/Details/5
