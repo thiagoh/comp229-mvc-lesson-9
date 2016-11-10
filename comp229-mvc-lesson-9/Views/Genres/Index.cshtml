@@ -1,14 +1,11 @@
 ﻿@model IEnumerable<comp229_mvc_lesson_9.Models.Genre>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Gnere List";
 }
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -29,9 +26,7 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GenreId }) |
             @Html.ActionLink("Details", "Details", new { id=item.GenreId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GenreId })
         </td>
     </tr>
 }
